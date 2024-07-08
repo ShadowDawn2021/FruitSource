@@ -1,0 +1,46 @@
+/* src/pages/Home.css */
+.navbar {
+    position: relative; /* Ensure navbar is positioned properly */
+    z-index: 10; /* Ensure navbar stays on top */
+  }
+  
+  .home-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 30px; /* Adjust this value based on the height of your navbar */
+  }
+  
+  .home-page-banner {
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    font-weight: bold;
+    opacity: 0;
+    animation: dropDown 2s forwards;
+  }
+  
+  @keyframes dropDown {
+    0% {
+      top: -50px;
+      opacity: 0;
+    }
+    100% {
+      top: 20px; /* Adjust this value to position the text properly */
+      opacity: 1;
+    }
+  }
+  
+  .home-section,
+  .about-section {
+    padding: 0px 0 0 0;
+    text-align: center;
+  }
+  

@@ -1,0 +1,77 @@
+/* src/css/NavBar.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d7855b;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.logo-image {
+  width: 40px; /* Adjust as needed */
+  margin-right: 10px; /* Add spacing between logo and text */
+  border-radius: 50%;
+}
+
+.navbar-brand-text {
+  font-size: 5.5em; 
+  font-weight: bold;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.navbar-list a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar-list.open {
+    display: flex;
+  }
+
+  .navbar-list li {
+    margin: 10px 0;
+  }
+}
