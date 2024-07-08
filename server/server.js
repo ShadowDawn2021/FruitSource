@@ -1,14 +1,16 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
+import dotenv from "dotenv"
+
+dotenv.config()
 
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const uri =
-	"mongodb+srv://Christi321:calayag123@cluster0.u209iue.mongodb.net/food";
+const uri = process.env.MONGODB_URI;
 
 async function connect() {
 	try {

@@ -1,8 +1,32 @@
+/* src/css/Footer.css */
 .contact-section {
-    background-color: #d7855b;
-    padding: 0px 0 0 0;
-    text-align: center;
-  }
+  background-color: #d7855b;
+  padding: 20px 0; /* Added some padding for better spacing */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.contact-information {
+  display: flex;
+  flex-direction: row; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Optional: Add some spacing between items */
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 20px 0 0 0; /* Optional: Add some margin at the top */
+}
 
+.contact-information li {
+  margin: 5px 0; /* Add some margin for better spacing */
+}
 
+.contact-information a {
+  color: white; /* Adjust the color if needed */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-information a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

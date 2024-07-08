@@ -9,14 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #d7855b;
   padding: 10px 20px;
-  color: white;
+  background-color: #d7855b;
 }
 
 .navbar-brand {
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center; 
 }
 
 .logo-image {
